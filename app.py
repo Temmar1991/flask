@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 
-
+# Route to var url
 @app.route('/<name>')
 def hello_name(name):
     return "Hello {}!".format(name)
